@@ -47,7 +47,7 @@ def handler(magnet, download):
         cmd = 'peerflix "' + magnet + '" --path /Documents'
     if sys.platform.startswith('linux'):
         subprocess.call(cmd)
-    elif sys.platform.startswith('win32'):
+    elif sys.platform.startswith('win32'): 
         subprocess.call(cmd,shell=True)
     
 # run main func
